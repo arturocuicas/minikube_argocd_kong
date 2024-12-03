@@ -10,5 +10,5 @@ helmCharts:
     version: 2.44.0
     releaseName: kong
     namespace: kong
-    valuesFile: ../../values.yaml
+    valuesFile: values.yaml
     includeCRDs: true
