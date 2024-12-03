@@ -1,0 +1,8 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+
+chartName: kong
+releaseName: kong
+values: values.yaml
+releaseNamespace: kong
+chartRepoUrl: https://charts.konghq.com
