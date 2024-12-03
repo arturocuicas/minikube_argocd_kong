@@ -1,6 +1,8 @@
 apiVersion: builtin
-kind: HelmChartInflationGenerator
-
+kind: ChartInflator
+metadata:
+  # The name here doesn't matter.
+  name: kong
 chartName: kong
 releaseName: kong
 values: values.yaml
