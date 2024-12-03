@@ -1,11 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
+helmGlobals:
+  chartHome: ../../../kong/
+
 helmCharts:
   - name: kong
     repo: https://charts.konghq.com
     version: 2.44.0
     releaseName: kong
     namespace: kong
-    valuesFile: values.yaml
+    valuesFile: ../../values.yaml
     includeCRDs: true
